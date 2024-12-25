@@ -19,10 +19,11 @@ package lib
 import (
 	"errors"
 
+	"sync"
+
 	"github.com/ethereum/go-ethereum/beacon/engine"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
-	"sync"
 )
 
 type relayPI struct {

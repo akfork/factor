@@ -23,7 +23,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/holiman/factor/lib"
-	"github.com/naoina/toml"
+	"github.com/pelletier/go-toml/v2"
 	"github.com/urfave/cli/v2"
 )
 
@@ -35,7 +35,7 @@ func NewApp(usage string) *cli.App {
 }
 
 var (
-	app           = NewApp("Exection Layer Relay")
+	app           = NewApp("Execution Layer Relay")
 	verbosityFlag = &cli.IntFlag{
 		Name:  "verbosity",
 		Usage: "Logging verbosity: 0=silent, 1=error, 2=warn, 3=info, 4=debug, 5=detail",
